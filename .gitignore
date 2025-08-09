@@ -1,0 +1,27 @@
+# Python compiled files
+__pycache__/  
+*.py[cod]
+*.pyc
+
+# SQLite DB file
+*.sqlite3
+
+# Virtual Environment
+venv/
+
+# Environment Variables 
+# গোপন config বা API key থাকে .env
+.env
+
+# Django migration files (except __init__.py)
+*/migrations/
+!*/migrations/__init__.py
+
+# VSCode editor settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+

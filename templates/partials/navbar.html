@@ -1,0 +1,82 @@
+{% load static %}
+
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar" aria-label="Main navigation">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home" aria-label="Home">
+                <img src="{% static 'assets/images/logo.png' %}" alt="Your Brand Logo" class="logo-img">
+            </a>
+            <!-- Company Name (Visible in mobile/tablet) -->
+            <span class="company-name d-lg-none">Global eCommerce</span>
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Off-canvas Menu for Mobile -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home" data-section="home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#shop" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-section="shop">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#category1">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#category2">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#category3">Category 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deals" data-section="deals">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-section="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#support" data-section="support">Support</a>
+                        </li>
+                    </ul>
+                    <!-- Right Side Icons and Search -->
+                    <div class="d-flex align-items-center icon-group">
+                        <!-- Search Icon (Mobile Only) -->
+                        <a href="#" class="nav-icon me-3 d-lg-none" id="searchToggle" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <!-- Search Input (Desktop Only) -->
+                        <div class="search-container d-lg-flex d-none">
+                            <input class="form-control search-input" type="search" placeholder="Search for products..." aria-label="Search for products">
+                            <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                        <!-- User Profile Icon -->
+                        <a href="#profile" class="nav-icon me-3" id="userProfile" data-bs-toggle="tooltip" data-bs-placement="bottom" title="User Profile" aria-label="User Profile">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <!-- Cart Icon with Tooltip -->
+                        <a href="#" class="nav-icon position-relative" id="cartIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View your cart (0 items)" aria-label="View cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Search Container -->
+    <div class="mobile-search-container container d-none d-lg-none" id="mobileSearchContainer">
+        <div class="search-wrapper">
+            <input class="form-control mobile-search-input" type="search" placeholder="Search for products..." aria-label="Search for products">
+            <button class="mobile-search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>

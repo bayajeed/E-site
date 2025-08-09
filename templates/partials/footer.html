@@ -1,0 +1,71 @@
+{% load static %}
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>ShopSmart</h5>
+          <p class="text-sm">ShopSmart is your trusted e-commerce destination, offering premium products with exceptional customer service. Explore our curated collections and enjoy seamless shopping with secure payments and fast delivery.</p>
+          <div class="trust-badges mt-3">
+            <img src="https://via.placeholder.com/40?text=Secure" alt="Secure Payment" title="Secure Payment">
+            <img src="https://via.placeholder.com/40?text=Certified" alt="Certified Store" title="Certified Store">
+          </div>
+        </div>
+        <!-- Customer Service -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Customer Service</h5>
+          <ul>
+            <li><a href="/returns">Returns & Refunds</a></li>
+            <li><a href="/shipping">Shipping Information</a></li>
+            <li><a href="/track-order">Track Your Order</a></li>
+            <li><a href="/support">Help Center</a></li>
+            <li><a href="/faq">FAQs</a></li>
+          </ul>
+          <p class="text-sm mt-3">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/shop">Shop All</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li><a href="/deals">Deals & Offers</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter & Contact -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Stay Connected</h5>
+          <p class="text-sm">Join our community for exclusive offers and updates!</p>
+          <div class="newsletter mb-4">
+            <form onsubmit="return validateEmail()">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="text-sm mt-3"><a href="mailto:support@shopsmart.com">support@shopsmart.com</a><br><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+      </div>
+      <!-- Payment Methods -->
+      <div class="row mt-4">
+        <div class="col-12 text-center payment-icons">
+          <img src="https://via.placeholder.com/50x30?text=Visa" alt="Visa Payment" title="Visa">
+          <img src="https://via.placeholder.com/50x30?text=MasterCard" alt="MasterCard Payment" title="MasterCard">
+          <img src="https://via.placeholder.com/50x30?text=PayPal" alt="PayPal Payment" title="PayPal">
+          <img src="https://via.placeholder.com/50x30?text=Amex" alt="Amex Payment" title="Amex">
+        </div>
+      </div>
+    </div>
+    <div class="sub-footer">
+      <p>&copy; 2025 GlobalShop. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/cookies">Cookie Policy</a></p>
+    </div>
+  </footer>
