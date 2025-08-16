@@ -336,6 +336,16 @@
     background: linear-gradient(135deg, #e9ecef 0%, #d3d8de 100%);
 }
 
+
+/* Slider Section */
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+    
 /* Responsive Adjustments */
 @media (max-width: 575.98px) {
     .top-bar {
@@ -449,6 +459,8 @@
     .search-input:focus {
         width: 240px;
     }
+
+
 }
 
 @media (min-width: 1200px) {

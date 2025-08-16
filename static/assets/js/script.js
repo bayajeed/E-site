@@ -234,3 +234,5 @@ document.addEventListener("DOMContentLoaded", function () {
       alert('Thank you for subscribing!');
       return false; // Prevent actual form submission for demo
     }
+
+
